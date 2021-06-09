@@ -1,0 +1,42 @@
+$main-color: #99BAED;
+
+
+* {
+    font-family: 'Catamaran', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    color: #153461;
+    opacity: 0.65;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.site-wrapper {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.btn {
+    padding: 5px 10px;
+    background: $main-color;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+
+@import 'blocks/header';
+@import 'blocks/menu-mobile';
+@import 'blocks/promo';
+
+@import 'media';

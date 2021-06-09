@@ -1,0 +1,55 @@
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu-laptop {
+        display: none;
+        ul {
+            margin: 0;
+            li {
+                list-style-type: none;
+                display: inline-block;
+                a {
+                    display: block;
+                    color: #163561;
+                    font-weight: 500;
+                    font-size: 20px;
+                    padding: 60px 7px 0 7px;
+                    transition: all .6s;
+                    &:hover {
+                        background: #A3C1EF;
+                        border-radius: 0 0 5px 5px;
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &__registration {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    }
+}
+
+// Hamburger
+.hamburger {
+    margin-top: 65px;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: #99BAED;
+        margin-top: 4px;
+    }
+}
+

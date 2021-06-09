@@ -1,0 +1,58 @@
+.menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    padding: 30px 10px;
+    background: $main-color;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .6s;
+    &.active {
+        overflow: visible;
+        left: 0;
+        opacity: 1;
+    }
+    ul {
+        margin: 0;
+        li {
+            a {
+                color: #fff;
+                font-weight: 500;
+                font-size: 25px;
+            }
+        }
+    }
+    svg {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        path {
+            fill: #fff;
+        }
+    }
+    &__registration {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        &-btn {
+            padding: 5px 10px;
+            font-size: 14px;
+            background: #fff;
+            color: $main-color;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+        a {
+            padding-right: 15px;
+        }
+    }
+}

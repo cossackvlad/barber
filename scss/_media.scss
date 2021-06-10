@@ -11,8 +11,18 @@
         margin: 0 auto;
         padding: 0 10px;
     }
-    p {
-        font-size: 25px;
+    .main-p {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .btn {
+        padding: 10px 15px;
+        &:hover {
+            box-shadow: 0px 10px 30px rgba(153, 187, 237, 0.85);
+        }
     }
 
     // Header
@@ -33,27 +43,20 @@
         }
     }
 
-    // Button
-    .btn {
-        padding: 10px 15px;
-        &:hover {
-            box-shadow: 0px 10px 30px rgba(153, 187, 237, 0.85);
-        }
-    }
-
     // Promo
     .promo {
         &__wrapper {
-            flex-direction: row;
-            &__content {
-                h1 {
-                    font-size: 30px;
-                    line-height: 40px;
-                }
-            }
-            &__img {
-                margin-top: 0;
-            }
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 30px;
+        }
+    }
+
+    // History
+    .history {
+        margin-top: 100px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 30px;
         }
     }
 }
@@ -62,6 +65,22 @@
     .container {
         width: 990px;
         padding: 0 15px;
+    }
+    .main-p {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .btn {
+        padding: 23px 33px;
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 35px;
     }
 
     // Header
@@ -82,34 +101,26 @@
         }
     }
 
-    // Button
-    .btn {
-        padding: 23px 33px;
-        font-size: 20px;
-    }
-
-    // Promo
-    .promo {
-        &__wrapper {
-            &__content {
-                h1 {
-                    font-size: 40px;
-                    line-height: 55px;
-                }
-                p {
-                    font-size: 25px;
-                }
-            }
-            &__img {
-                margin-top: 0;
-            }
-        }
+    // History
+    .history {
+        margin-top: 150px;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+    h2 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .btn {
+        margin-top: 50px;
     }
 
     // Header
@@ -127,21 +138,35 @@
         &__wrapper {
             &__content {
                 padding-top: 15px;
-                h1 {
-                    font-size: 50px;
-                    line-height: 65px;
-                }
-                &-btn {
-                    margin-top: 50px;
-                }
             }
         }
     }
+
+    // History
+    .history {
+        &__wrapper {
+            &__content {
+                padding-top: 15px;
+            }
+        }
+    }
+
 }
 
 @media (min-width: 1440px) {
     .container {
         width: 1410px;
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 75px;
+    }
+    h2 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    .btn {
+        margin-top: 90px;
     }
 
     // Promo
@@ -149,14 +174,22 @@
         &__wrapper {
             &__content {
                 padding-top: 60px;
-                h1 {
-                    font-size: 60px;
-                    line-height: 75px;
-                }
-                &-btn {
-                    margin-top: 90px;
-                }
             }
          }
+    }
+
+    // History
+    .history {
+        &__wrapper {
+            &__content {
+                padding-top: 70px;
+                p {
+                    padding-bottom: 45px;
+                }
+                &-btn {
+                    margin-top: 50px;
+                }
+            }
+        }
     }
 }

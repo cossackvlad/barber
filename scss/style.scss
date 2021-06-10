@@ -6,7 +6,35 @@ $main-color: #99BAED;
     border: none;
     padding: 0;
     margin: 0;
-    list-style-type: none;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #163561;
+    span {
+        color: #FBB400;
+    }
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: #163561;
+    margin-bottom: 30px;
+    span {
+        color:#FBB400;
+    }
+}
+
+.main-p {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #153461;
+    padding-bottom: 20px;
 }
 
 li {
@@ -22,10 +50,6 @@ p {
     color: #153461;
     margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-}
 
 .site-wrapper {
     position: relative;
@@ -40,10 +64,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     font-size: 14px;
     color: #fff;
+    margin-top: 30px;
 }
 
 @import 'blocks/header';
 @import 'blocks/menu-mobile';
 @import 'blocks/promo';
+@import 'blocks/history';
 
 @import 'media';

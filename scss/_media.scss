@@ -43,10 +43,17 @@
 
     // Promo
     .promo {
-        background: url(../img/promo-bcg.png) top right no-repeat;
-        background-size: 400px;
-        &__content {
-            width: 300px;
+        &__wrapper {
+            flex-direction: row;
+            &__content {
+                h1 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+            &__img {
+                margin-top: 0;
+            }
         }
     }
 }
@@ -83,16 +90,18 @@
 
     // Promo
     .promo {
-        background-size: 600px;
-        &__content {
-            width: 400px;
-            padding-top: 25px;
-            h1 {
-                font-size: 35px;
-                line-height: 50px;
+        &__wrapper {
+            &__content {
+                h1 {
+                    font-size: 40px;
+                    line-height: 55px;
+                }
+                p {
+                    font-size: 25px;
+                }
             }
-            p {
-                font-size: 25px;
+            &__img {
+                margin-top: 0;
             }
         }
     }
@@ -115,18 +124,17 @@
 
     // Promo
     .promo {
-        background-size: 670px;
-        &__content {
-            width: 490px;
-            padding-top: 60px;
-            h1 {
-                font-size: 62px;
-                line-height: 72px;
-                margin-bottom: 30px;
+        &__wrapper {
+            &__content {
+                padding-top: 15px;
+                h1 {
+                    font-size: 50px;
+                    line-height: 65px;
+                }
+                &-btn {
+                    margin-top: 50px;
+                }
             }
-        }
-        &__btn {
-            margin-top: 97px;
         }
     }
 }
@@ -138,25 +146,17 @@
 
     // Promo
     .promo {
-        background-size: 865px;
-        &__content {
-            width: 575px;
-            h1 {
-                font-size: 73px;
-                line-height: 90px;
+        &__wrapper {
+            &__content {
+                padding-top: 60px;
+                h1 {
+                    font-size: 60px;
+                    line-height: 75px;
+                }
+                &-btn {
+                    margin-top: 90px;
+                }
             }
-        }
-    }
-}
-
-@media (min-width: 1570px) {
-    .container {
-        width: 1540px;
-    }
-
-    // Promo
-    .promo {
-        background-size: 1070px;
-        padding-bottom: 70px;
+         }
     }
 }

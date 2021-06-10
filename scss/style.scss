@@ -28,6 +28,10 @@ h2 {
         color:#FBB400;
     }
 }
+.h2-center {
+    text-align: center;
+    display: block;
+}
 
 .main-p {
     font-weight: normal;
@@ -71,5 +75,6 @@ p {
 @import 'blocks/menu-mobile';
 @import 'blocks/promo';
 @import 'blocks/history';
+@import 'blocks/services';
 
 @import 'media';

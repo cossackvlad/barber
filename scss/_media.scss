@@ -59,6 +59,15 @@
             column-gap: 30px;
         }
     }
+
+    // Services
+    .services {
+        margin-top: 100px;
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 20px;
+        }
+    }
 }
 
 @media (min-width: 1024px) {
@@ -81,6 +90,7 @@
     h2 {
         font-size: 35px;
         line-height: 35px;
+        margin-bottom: 80px;
     }
 
     // Header
@@ -104,6 +114,24 @@
     // History
     .history {
         margin-top: 150px;
+    }
+
+    // Services
+    .services {
+        margin-top: 150px;
+        h2 {
+            line-height: 42px;
+        }
+        &__wrapper {
+            &__blocks {
+                &-title {
+                    font-size: 25px;
+                }
+                &-subtitle {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
 
@@ -151,6 +179,24 @@
         }
     }
 
+    // Services
+    .services {
+        h2 {
+            line-height: 52px;
+        }
+        &__wrapper {
+            column-gap: 45px;
+            &__blocks {
+                &-title {
+                    font-size: 35px;
+                }
+                &-subtitle {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
 }
 
 @media (min-width: 1440px) {
@@ -188,6 +234,20 @@
                 }
                 &-btn {
                     margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    // Services
+    .services {
+        h2 {
+            line-height: 65px;
+        }
+        &__wrapper {
+            &__blocks {
+                &-title {
+                    font-size: 45px;
                 }
             }
         }

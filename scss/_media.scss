@@ -96,6 +96,24 @@
             }
         }
     }
+
+    // Footer
+    .footer {
+        margin-top: 150px;
+        &__wrapper {
+            &__content {
+                width: 530px;
+                margin: 0 auto;
+                img {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    .social-icons {
+        width: 250px;
+        margin-top: 40px;
+    }
 }
 
 @media (min-width: 1024px) {

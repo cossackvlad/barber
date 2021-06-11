@@ -1,9 +1,9 @@
 .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
-    padding: 30px 20px 0px;
+    padding: 30px 20px 50px;
     background: $main-color;
     height: 100vh;
     display: flex;
@@ -42,7 +42,6 @@
         width: 100%;
         display: flex;
         justify-content: start;
-        margin-bottom: 30px;
         &-btn {
             padding: 5px 10px;
             font-size: 14px;

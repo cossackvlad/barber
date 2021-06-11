@@ -1,0 +1,24 @@
+.gallery {
+    margin-top: 50px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+.link-btn {
+    text-align: center;
+    margin-top: 50px;
+    &__link {
+        display: inline-block;
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}

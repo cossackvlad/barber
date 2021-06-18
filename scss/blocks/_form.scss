@@ -1,0 +1,43 @@
+.form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(32 40 51 / 80%);
+    padding: 50px 0px;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+    &.active {
+        overflow: visible;
+        opacity: 1;
+        display: block;
+    }
+    p {
+        text-align: center;
+    }
+    form {
+        background: rgba(32 40 51 0.5);
+        width: 240px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        input {
+            width: 100%;
+            padding: 5px;
+            font-size: 15px;
+        }
+        button {
+            display: block;
+            margin: 20px auto 0;
+        }
+        .close {
+            position: absolute;
+            top: 10%;
+            right: 5%;
+        }
+    }
+}
